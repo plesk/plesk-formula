@@ -1,4 +1,4 @@
-{% license = salt['pillar.get']('plesk:license') %}
+{% set license = salt['pillar.get']('plesk:license') %}
 {% if license %}
 install_plesk_license:
   cmd.run:
