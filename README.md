@@ -24,3 +24,16 @@ The sequence is important!
 3. `setup` - provide base settings and create default admin's subscription
 4. `letsencrypt` - install Plesk extension and retrive SSL certificate for default subscription and Plesk itself. This state does not included to kitchenci because of obvious reason.
 5. `firewall` - setup `firewalld` to open Plesk's related ports (CentOS 7 only)
+
+# Tests
+
+* Install [VirtualBox](https://www.virtualbox.org/) and [Vagrant](https://www.vagrantup.com)
+* Install [KitchenCI](http://kitchen.ci/) and its dependencies:
+```
+bundle install
+```
+
+* Run test installation
+```
+kitchen test
+```
