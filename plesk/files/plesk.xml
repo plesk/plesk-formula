@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+ <short>Plesk</short>
+ <description>Plesk hosting panel</description>
+ <port protocol="tcp" port="8443"/>
+ <port protocol="tcp" port="21"/>
+ <port protocol="tcp" port="25"/>
+ <port protocol="tcp" port="53"/>
+ <port protocol="tcp" port="80"/>
+ <port protocol="tcp" port="110"/>
+ <port protocol="tcp" port="113"/>
+ <port protocol="tcp" port="143"/>
+ <port protocol="tcp" port="443"/>
+ <port protocol="tcp" port="465"/>
+ <port protocol="tcp" port="587"/>
+ <port protocol="tcp" port="990"/>
+ <port protocol="tcp" port="995"/>
+ <port protocol="tcp" port="3306"/>
+ <port protocol="tcp" port="57000-58000"/>
+</service>

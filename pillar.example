@@ -1,0 +1,30 @@
+plesk:
+  licesne: A00V00-C9CM03-X27A64-VKDF75-298458
+  admin:
+    email: admin@example.com
+    password: setup
+  fail2ban:
+    white_ips:
+      - 127.0.0.1
+      - 123.123.123.123
+    jails:
+      - plesk-panel
+      - recidive
+      - ssh
+  components:
+    - panel
+    - fail2ban
+    - selinux
+    - l10n
+    - pmm
+    - mysqlgroup
+    - roundcube
+    - postfix
+    - dovecot
+    - awstats
+    - mod_fcgid
+    - webservers
+    - php5.6
+    - phpgroup
+    - nginx
+    - heavy-metal-skin

@@ -1,0 +1,31 @@
+---
+driver:
+  name: vagrant
+  vm_hostname: example.com
+
+provisioner:
+  omnibus_cachier: true
+  name: salt_solo
+  formula: plesk
+  pillars-from-files:
+    plesk.sls: pillar.example
+  pillars:
+    top.sls:
+      base:
+        '*':
+          - plesk
+  state_top:
+    base:
+      '*':
+        - plesk
+        - plesk/key
+        - plesk/setup
+        - plesk/firewall
+
+platforms:
+  - name: centos-7.2
+
+suites:
+  - name: default
+    run_list:
+    attributes:
