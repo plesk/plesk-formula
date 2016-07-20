@@ -1,5 +1,5 @@
 plesk:
-  licesne: A00V00-C9CM03-X27A64-VKDF75-298458
+  license: A00V00-C9CM03-X27A64-VKDF75-298458
   admin:
     email: admin@example.com
     password: setup
